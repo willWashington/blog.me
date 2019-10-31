@@ -1,0 +1,46 @@
+@import "global";
+body {
+  background-color: rgb(82, 82, 82);
+}
+
+#main {
+  background-color: #333;
+  height: 100vh;
+  margin-left: $gutter;
+  margin-right: $gutter;
+  color: $fontColor;
+}
+
+#mainHeader {
+  padding: $gutter;
+  background: darkgray;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: $gutter;
+  margin-right: $gutter;
+  margin-top: $gutter;
+}
+
+.leftColumn {
+  border: 1px solid red;
+}
+.rightColumn {
+  display: flex;
+}
+
+.textContent {
+  color: white;
+
+}
+
+
+

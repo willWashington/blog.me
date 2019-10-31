@@ -1,0 +1,52 @@
+@media screen and (min-width: 500px) {
+  body {
+    --fontsize: 14px;
+  } 
+  h1 {
+    --headersize1: 20px;
+  } 
+  h2 {
+    --headersize2: 18px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    --fontsize: 12px;
+  }
+  h1 {
+    --headersize1: 18px;
+  } 
+  h2 {
+    --headersize2: 16px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  body {
+    --fontsize: 10px;
+  }
+  h1 {
+    --headersize1: 16px;
+  } 
+  h2 {
+    --headersize2: 14px;
+  }
+}
+
+body {
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+  font-size: calc(var(--fontsize) + (26 - 14) * ((100vw - 320px) / (1600 - 300)));
+}
+
+h1 {
+  font-size: calc(var(--headersize1) + (26 - 14) * ((100vw - 320px) / (1600 - 300)));
+}
+
+h2 {
+  font-size: calc(var(--headersize2) + (26 - 14) * ((100vw - 320px) / (1600 - 300)));
+}
+
+/* NOT BAD - may need love */
+
+
